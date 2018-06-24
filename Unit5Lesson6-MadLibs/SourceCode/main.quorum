@@ -1,0 +1,24 @@
+text pluralNoun = input("Enter a plural noun in lower case.")
+text noun1 = input("Enter a singular noun in lower case")
+text noun2 = input("Enter another singular noun in lower case")
+text song = input("Enter a name of a song. It can be multiple words")
+text verb = input("Enter a verb.")
+
+text firstLetter = verb:GetCharacter(0)
+firstLetter = firstLetter:ToUpperCase()
+text remainingLetters = verb:GetSubtext(1)
+
+verb = firstLetter + remainingLetters
+
+output "Learning to drive is a tricky process. There are a few rules you must follow."
+say "Learning to drive is a tricky process. There are a few rules you must follow."
+output "1. Keep two " + pluralNoun + " on the steering wheel at all times."
+say "1. Keep two " + pluralNoun + " on the steering wheel at all times."
+output "2. Step on the " + noun1 + " to speed up and the " + noun2 +" to slow down."
+say "2. Step on the " + noun1 + " to speed up and the " + noun2 +" to slow down."
+output "3. Your parents will just LOVE it if you play " + song + " on the radio."
+say "3. Your parents will just LOVE it if you play " + song + " on the radio."
+output "4. Make sure to honk your horn when you see " + verb + " on a street sign."
+say "4. Make sure to honk your horn when you see " + verb + " on a street sign."
+
+
